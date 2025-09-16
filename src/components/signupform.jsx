@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./signupform.css"; // import css
+import "./Signupform.css"; // import css
 
 function Signupform() {
   // state to store form values
