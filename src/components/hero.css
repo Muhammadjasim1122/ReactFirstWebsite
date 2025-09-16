@@ -1,3 +1,4 @@
+/* Desktop (your default styles) */
 .hero {
   display: flex;
   align-items: center;
@@ -14,15 +15,12 @@
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   line-height: 70px;
-
 }
 
 .hero-text p {
-  
-  color: #5A5959;
+  color: #5a5959;
   font-size: 12px;
   max-width: 310px;
-
 }
 
 .buttons {
@@ -30,13 +28,12 @@
 }
 
 .shop-btn {
-  background: #D01C28;
+  background: #d01c28;
   color: white;
   border: none;
   padding: 8px 25px;
   margin-right: 10px;
   cursor: pointer;
-  /* border-radius: 4px; */
 }
 
 .category-btn {
@@ -44,13 +41,84 @@
   padding: 8px 25px;
   background: white;
   cursor: pointer;
-  /* border-radius: 4px; */
 }
 
 .stores img {
   width: 20px;
   margin-right: 10px;
 }
+
 .hero-image img {
   width: 450px;
+}
+
+/* ====== Tablet ====== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 20px 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .hero-image img {
+    width: 350px;
+  }
+}
+
+/* ====== Mobile ====== */
+@media (max-width: 768px) {
+
+  .hero {
+    /* flex-direction: column; */
+    text-align: center;
+    padding: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .shop-btn,
+  .category-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .hero-image img {
+    width: 280px;
+  }
+}
+
+/* ====== Small phones ====== */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
 }

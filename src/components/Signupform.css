@@ -1,0 +1,75 @@
+/* Center form in the page */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background: #f4f6f9;
+}
+
+/* Card-like form */
+.signup-form {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Input styling */
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #d01c28; /* matches your theme red */
+  box-shadow: 0px 0px 4px rgba(208,28,40,0.4);
+}
+
+/* Button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #d01c28;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #a3121f;
+}
